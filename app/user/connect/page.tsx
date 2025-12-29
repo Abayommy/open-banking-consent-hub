@@ -5,15 +5,14 @@ import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { useConsentStore } from '@/lib/store/consent-store';
 import { mockTPPs } from '@/lib/data/mock-tpps';
-import { mockAccounts } from '@/lib/data/mock-accounts';
+import { mockAccounts, maskIBAN } from '@/lib/data/mock-accounts';
 import { Permission, PERMISSION_DETAILS } from '@/lib/types';
-import { formatCurrency, maskIBAN } from '@/lib/utils';
+import { formatCurrency } from '@/lib/utils';
 import { 
   ArrowLeft, 
   ArrowRight,
   CheckCircle,
   Shield,
-  Building2,
   Search,
   Lock
 } from 'lucide-react';
